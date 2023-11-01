@@ -60,7 +60,7 @@ $(document).ready(function () {
         btn.attr("disabled", "disabled");
 
         let http = new XMLHttpRequest();
-        http.open("GET", "https://icloud.yogiazy.iotflows.com/lia-sigit?nama=" + $('#myName').val() + "&pesan=" + $('#myQuotes').val(), true);
+        http.open("GET", "https://icloud.yogiazy.iotflows.com/lia-sigit2?nama=" + $('#myName').val() + "&pesan=" + $('#myQuotes').val(), true);
 
         http.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -88,7 +88,7 @@ $(document).ready(function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     var http = new XMLHttpRequest();
-    http.open("GET", "https://icloud.yogiazy.iotflows.com/reloadTamu?reload=sukses", true);
+    http.open("GET", "https://icloud.yogiazy.iotflows.com/reloadTamu2?reload=sukses", true);
     http.send();
 
     http.onreadystatechange = function () {
